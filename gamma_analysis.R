@@ -1,4 +1,5 @@
 #### Gamma Sensitivity Analysis ####
+
 library(segmented)
 
 data_gamma <- read.csv("gamma_data.csv", header = T, sep = ",")

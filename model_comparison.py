@@ -21,9 +21,9 @@ n_runs = 1000
 acquisitions = numpy.empty([n_runs,3])
 
 # Single Staff Type (SST) Model Run
-def Random(iteration):
+def SST(iteration):
     model = stochpy.SSA()
-    model.Model(model_file='RandomMix.psc', dir=workingdir)
+    model.Model(model_file='SST.psc', dir=workingdir)
     model.Endtime(end_time)
     model.DoStochSim()
     model.GetRegularGrid(n_samples=end_time)
@@ -60,7 +60,7 @@ for i in range(0,n_runs):
     Nurse_MD(i)
     MetaPop(i)
     
-numpy.savetxt('model_data.csv',acquisitions,delimiter=',',header="Random,Nurse_MD,MetaPop",comments='')
+numpy.savetxt('model_data.csv',acquisitions,delimiter=',',header="SST,Nurse_MD,MetaPop",comments='')
 
 print("*************************")
 print("***** Runs Complete *****")

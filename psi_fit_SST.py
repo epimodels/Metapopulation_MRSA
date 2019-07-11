@@ -64,7 +64,7 @@ def ABCFit(config,objective,tol,iterations,priorhi,priorlow):
     return results
 
 # Fitting Function - Tweak prior to improve acceptance rate
-MRSA_fit = ABCFit(config='RandomMix.psc',objective=39.03,tol=0.15,iterations=25000,priorhi=1.0,priorlow=0)
+MRSA_fit = ABCFit(config='SST.psc',objective=39.03,tol=0.15,iterations=25000,priorhi=1.0,priorlow=0)
 
 MRSA_estimate = MRSA_fit[:,0][MRSA_fit[:,2]==1]
 

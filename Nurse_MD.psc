@@ -1,12 +1,11 @@
 ################################################################
-# Dynamic Transmission Model of MRSA in an ICU      	       #
+# Dynamic MRSA Transmission Model in an ICU                    #
+# Nurse_MD Model        	                                   #
 # This model keeps nurses randomly mixing but separates the MD #
-# Queue-based Steady State Populations             	           #
-# Author: Matthew Mietchen (matthew.mietchen@wsu.edu)          #
 ################################################################
 
 # Descriptive Information for PML File
-Modelname: MRSA MD Cohort 
+Modelname: Nurse-MD Model
 Description: PML Implementation of MRSA transmission model 
 
 # Set model to run with numbers of individuals

@@ -1,11 +1,10 @@
 #######################################################
-# Dynamic Transmission Model of MRSA in an ICU		  #
-# Queue-based Steady State Population                 #
-# Author: Matthew Mietchen (matthew.mietchen@wsu.edu) #
+# Dynamic MRSA Transmission Model in an ICU		      #
+# Singel Staff Type (SST) Model                       #
 #######################################################
 
 # Descriptive Information for PML File
-Modelname: MRSA ICU Random Mixing
+Modelname: MRSA ICU Single Staff Type (SST) Model
 Description: PML Implementation of MRSA transmission model 
 
 # Set model to run with numbers of individuals

@@ -1,11 +1,11 @@
-#########################################################
-# Dynamic Transmission Model of MRSA Cohorts.      	#
-# Queue-based Steady State Populations             	#
-# Author: Matthew Mietchen (matthew.mietchen@wsu.edu)   #
-#########################################################
+############################################################
+# Dynamic MRSA Transmission Model in ICU            	   #
+# Metapopulation Model                                     #
+# Cohorts depict a group of patients assigned to one nurse #
+############################################################
 
 # Descriptive Information for PML File
-Modelname: MRSA Cohort
+Modelname: Metapopulation Model
 Description: PML Implementation of MRSA transmission model 
 
 # Set model to run with numbers of individuals

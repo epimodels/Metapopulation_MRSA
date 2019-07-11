@@ -20,7 +20,7 @@ n_runs = 2500
 # Run is a single run of the model that returns the number of incident cases
 def Baserun(pdict):
     model = stochpy.SSA()
-    model.Model(model_file='RandomMix.psc', dir=workingdir)
+    model.Model(model_file='SST.psc', dir=workingdir)
     model.Endtime(end_time)
     model.ChangeParameter('rho',pdict['rho']*4.154)
     model.ChangeParameter('sigma',pdict['sigma']*0.054)
