@@ -18,7 +18,6 @@ end_time = 8760
 n_runs = 250
 
 # Run is a single run of the MetaPop model that returns the number of incident cases
-    
 def Leakyrun(pdict):
     model = stochpy.SSA()
     model.Model(model_file='Gamma.psc', dir=workingdir)
