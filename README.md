@@ -1,13 +1,13 @@
 # Metapopulation_MRSA
-Code Repository for "Population Structure Drives Differential Methicillin-resistant Staphylococcus aureus Colonization Dynamics"
-----
+## Code Repository for "Population Structure Drives Differential Methicillin-resistant Staphylococcus aureus Colonization Dynamics"
 
-The Python scripts in this repository require the 'os', 'stochpy', 'numpy', 'stats', 'argparse', 'matplotlib.pyplot, and 'random' libraries, all of which are available via pip and scipy. These scripts are single run programs performed on an array. User's slurm admission scripts (.srun) for simulation on a cluster are not included.    
 
-The R scripts require the 'readr', 'sm', and 'vioplot' libraries.
+The Python scripts in this repository require the 'os', 'stochpy', 'numpy', 'stats', 'argparse', 'matplotlib.pyplot, and 'random' libraries, all of which are available via pip and/or conda. Note that these scripts are single core scripts that, to produce the results of the manuscript, were submitted to a cluster as an array of jobs run many times, the output of which was then recombined (and is provided in this repository). Due to the individual vagaries of cluster configurations, job submission scripts have *not* been provided.
+  
+The R scripts require the 'readr', 'sm', and 'vioplot' and 'segmented' libraries.
 
-Contents:
-----
+## Contents:
+
 * 'SST.psc': Configuration file for the Single Staff Type (SST) model. This model assumes random mixing of all ICU staff (nurses and MD) evenly with all patients. 
 
 * 'Nurse_MD.psc': Configuration file for a model with the Nurses and MD separated as different staff types. All nurses and the MD are still assumed to randomly mix with all patients in the ICU.
