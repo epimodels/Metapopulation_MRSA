@@ -336,7 +336,7 @@ Acquisition = 0
 rho_N = 3.973 	# nurse direct care tasks per patient per hour
 rho_D = 0.181 	# doctor direct care tasks per patient per hour 
 sigma = 0.054 	# hand contamination probability
-psi = 0.0464    # new fitted probability of a successful colonization of an uncolonized patient
+psi = 0.0236    # new fitted probability of a successful colonization of an uncolonized patient
 
 # Exit (death/discharge) rates
 theta = 0.00949 # probability of death/discharge
