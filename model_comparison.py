@@ -56,7 +56,7 @@ def MetaPop(iteration):
 
 for i in range(0,n_runs):
     print("*** Iteration %i of %i ***" % (i+1,n_runs))
-    Random(i)
+    SST(i)
     Nurse_MD(i)
     MetaPop(i)
     
