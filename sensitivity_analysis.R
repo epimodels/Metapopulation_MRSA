@@ -35,8 +35,10 @@ greek_names <- c(expression(iota),expression(mu),expression(tau),expression(thet
                  expression(psi),expression(rho))
 
 barplot(coefficients,horiz=TRUE,names.arg=greek_names,main="(A) Single Staff Type Model",ylab="Parameter",
-        xlab="Change in Cumulative Acquisitions",cex.main=1.25,cex.lab=1.25,cex.axis=1.25,cex.names=1.25,
+        xlab="Change in Cumulative Acquisitions per 1% Change in Parameter Value",cex.main=1.25,cex.lab=1.1,cex.axis=1.25,cex.names=1.25,
         xlim = c(-0.5,0.5),col=cols)
+abline(v=0.20,col="grey80")
+abline(v=-0.20,col="grey80")
 
 
 #### Nurse-MD Model ####
@@ -57,8 +59,10 @@ greek_names1 <- c(expression(iota[N]),expression(iota[D]),expression(mu),
                   expression(nu),expression(psi),expression(rho[N]),expression(rho[D]))
 
 barplot(coefficients1,horiz=TRUE,names.arg=greek_names1,main="(B) Nurse-MD Model",ylab="Parameter",
-        xlab="Change in Cumulative Acquisitions",cex.lab=1.25,cex.axis=1.25,cex.names=1.25,
+        xlab="Change in Cumulative Acquisitions per 1% Change in Parameter Value",cex.lab=1.1,cex.axis=1.25,cex.names=1.25,
         xlim = c(-0.5,0.5),col=cols1)
+abline(v=0.20,col="grey80")
+abline(v=-0.20,col="grey80")
 
 #### Meta-Pop Model ####
 
@@ -74,8 +78,10 @@ coefficients2 <- metapop_model$coefficients[2:11]*0.1
 cols2 <- c("grey90", "grey50")[(coefficients2 < 0) + 1]  
 
 barplot(coefficients2,horiz=TRUE,names.arg=greek_names1,main="(C) Metapopulation Model",ylab="Parameter",
-        xlab="Change in Cumulative Acquisitions",cex.lab=1.25,cex.axis=1.25,cex.names=1.25,
+        xlab="Change in Cumulative Acquisitions per 1% Change in Parameter Value",cex.lab=1.1,cex.axis=1.25,cex.names=1.25,
         xlim = c(-0.5,0.5),col=cols2)
+abline(v=0.20,col="grey80")
+abline(v=-0.20,col="grey80")
 
 #### MD vs Meta-Pop Difference Chart ####
 
@@ -84,6 +90,8 @@ coefficients3 <- coefficients1-coefficients2
 cols3 <- c("grey90", "grey50")[(coefficients3 < 0) + 1] 
 
 barplot(coefficients3,horiz=TRUE,names.arg=greek_names1,main="(D) Difference between Model B & C",ylab="Parameter",
-        xlab="Change in Cumulative Acquisitions",cex.lab=1.25,cex.axis=1.25,cex.names=1.25,
+        xlab="Change in Cumulative Acquisitions per 1% Change in Parameter Value",cex.lab=1.1,cex.axis=1.25,cex.names=1.25,
         xlim = c(-0.5,0.5),col=cols3)
 
+abline(v=0.20,col="grey80")
+abline(v=-0.20,col="grey80")
